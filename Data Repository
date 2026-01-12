@@ -1,0 +1,9 @@
+Customer-Data-Cleaning/
+│
+├── data/
+│   ├── messy_customer_sales_data.csv
+│   └── cleaned_customer_sales_data.csv
+│
+├── data_cleaning.ipynb
+├── README.md
+└── requirements.txt
