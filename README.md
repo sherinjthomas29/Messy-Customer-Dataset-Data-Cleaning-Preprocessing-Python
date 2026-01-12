@@ -56,101 +56,101 @@ Loaded the dataset using pd.read_csv()
 
 Checked:
 
-Shape of data
+- Shape of data
 
-Column data types
+- Column data types
 
-Summary statistics
+- Summary statistics
 
-Missing value distribution
+- Missing value distribution
 
 Identified:
 
-Inconsistent text values
+- Inconsistent text values
 
-Incorrect data types
+- Incorrect data types
 
-Negative and unrealistic values
+- Negative and unrealistic values
 
 ### 2. **Handling Missing Values**
 
-Applied column-specific strategies:
+- Applied column-specific strategies:
 
-Dropped rows with missing Customer_ID (primary identifier)
+- Dropped rows with missing Customer_ID (primary identifier)
 
 Filled:
 
-Age → median value
+- Age → median value
 
-Purchase_Amount → median
+- Purchase_Amount → median
 
-Feedback_Score → mode
+- Feedback_Score → mode
 
-Gender, City, Country → most frequent value
+- Gender, City, Country → most frequent value
 
-Forward-filled Last_Purchase_Date where required
+- Forward-filled Last_Purchase_Date where required
 
 ### 3. **Cleaning Age Column (Text + Numeric Issues)**
 
-Age values contained:
+- Age values contained:
 
-Strings like "51.0 years"
+- Strings like "51.0 years"
 
-Invalid values like "nan years", "250", "-10"
+- Invalid values like "nan years", "250", "-10"
 
-Used Regular Expressions to extract numeric values
+- Used Regular Expressions to extract numeric values
 
-Converted Age to integer
+- Converted Age to integer
 
-Replaced invalid and missing values using median age (43)
+- Replaced invalid and missing values using median age (43)
 
 ### 4. **Fixing Inconsistent Categorical Data**
 
-Standardized text formatting:
+- Standardized text formatting:
 
-Converted values to lowercase
+- Converted values to lowercase
 
-Removed leading/trailing spaces
+- Removed leading/trailing spaces
 
-Unified categories such as:
+- Unified categories such as:
 
-Gender: m, M, MALE → male
+- Gender: m, M, MALE → male
 
-City: KOLKATA, kolkata → kolkata
+- City: KOLKATA, kolkata → kolkata
 
-Country: ind, InDia → india
+- Country: ind, InDia → india
 
 ### 5. **Handling Duplicate Records**
 
-Identified duplicate rows using df.duplicated()
+- Identified duplicate rows using df.duplicated()
 
-Removed exact duplicates
+- Removed exact duplicates
 
-Removed duplicate Customer_IDs, keeping the first occurrence
+- Removed duplicate Customer_IDs, keeping the first occurrence
 
-Reduced dataset to 9,000 clean unique customer records
+- Reduced dataset to 9,000 clean unique customer records
 
 ### 6. **Correcting Data Types**
 
-Converted columns to appropriate data types:
+- Converted columns to appropriate data types:
 
-Age → Integer
+- Age → Integer
 
-Signup_Date → DateTime
+- Signup_Date → DateTime
 
-Last_Purchase_Date → DateTime
+- Last_Purchase_Date → DateTime
 
-Ensured numerical columns were correctly typed
+- Ensured numerical columns were correctly typed
 
 ### 7. **Outlier Detection & Treatment**
 
-Visualized outliers using boxplots
+- Visualized outliers using boxplots
 
-Used Z-score method to identify extreme outliers
+- Used Z-score method to identify extreme outliers
 
-Removed rows where Z-score > 3
+- Removed rows where Z-score > 3
 
-Revalidated distributions after cleaning
+- Revalidated distributions after cleaning
 
 ---
 ## Final Cleaned Dataset
