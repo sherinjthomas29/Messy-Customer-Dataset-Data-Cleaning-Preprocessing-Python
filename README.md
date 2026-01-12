@@ -13,18 +13,20 @@ The dataset contained missing values, duplicates, inconsistent formats, incorrec
 
 The dataset includes customer demographic and transactional data, such as:
 
-|-----|
-|Customer ID|
-|Name|
-|Gender|
-|Age|
-|City|
-|Signup Date|
-|Last Purchase Date|
-|Purchase Amount|
-|Feedback Score|
-|Contact Information|
-|Country|
+| Column Name            | Description                              |
+|------------------------|------------------------------------------|
+| Customer_ID            | Unique identifier for each customer      |
+| Name                   | Customer full name                       |
+| Gender                 | Gender of the customer                  |
+| Age                    | Age of the customer                     |
+| City                   | City of residence                       |
+| Signup_Date            | Customer signup date                   |
+| Last_Purchase_Date     | Most recent purchase date               |
+| Purchase_Amount        | Transaction amount                     |
+| Feedback_Score         | Customer feedback rating (1–10)         |
+| Contact_Information    | Email and phone number                  |
+| Country                | Country of residence                   |
+
 
 Initial dataset size: 10,200 rows × 12 columns 
 
