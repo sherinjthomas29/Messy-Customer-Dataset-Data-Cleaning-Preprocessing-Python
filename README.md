@@ -50,7 +50,7 @@ Initial dataset size: 10,200 rows × 12 columns
 ---
 ## 📋 Step-by-Step Data Cleaning Process
 
-1. **Data Inspection & Understanding**
+### 1. Data Inspection & Understanding
 
 Loaded the dataset using pd.read_csv()
 
@@ -72,7 +72,7 @@ Incorrect data types
 
 Negative and unrealistic values
 
-2. **Handling Missing Values**
+### 2. **Handling Missing Values**
 
 Applied column-specific strategies:
 
@@ -90,7 +90,7 @@ Gender, City, Country → most frequent value
 
 Forward-filled Last_Purchase_Date where required
 
-3. **Cleaning Age Column (Text + Numeric Issues)**
+### 3. **Cleaning Age Column (Text + Numeric Issues)**
 
 Age values contained:
 
@@ -104,7 +104,7 @@ Converted Age to integer
 
 Replaced invalid and missing values using median age (43)
 
-4. **Fixing Inconsistent Categorical Data**
+### 4. **Fixing Inconsistent Categorical Data**
 
 Standardized text formatting:
 
@@ -120,7 +120,7 @@ City: KOLKATA, kolkata → kolkata
 
 Country: ind, InDia → india
 
-5. **Handling Duplicate Records**
+### 5. **Handling Duplicate Records**
 
 Identified duplicate rows using df.duplicated()
 
@@ -130,7 +130,7 @@ Removed duplicate Customer_IDs, keeping the first occurrence
 
 Reduced dataset to 9,000 clean unique customer records
 
-6. **Correcting Data Types**
+### 6. **Correcting Data Types**
 
 Converted columns to appropriate data types:
 
@@ -142,7 +142,7 @@ Last_Purchase_Date → DateTime
 
 Ensured numerical columns were correctly typed
 
-7. **Outlier Detection & Treatment**
+### 7. **Outlier Detection & Treatment**
 
 Visualized outliers using boxplots
 
