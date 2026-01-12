@@ -13,7 +13,7 @@ The dataset contained missing values, duplicates, inconsistent formats, incorrec
 
 The dataset includes customer demographic and transactional data, such as:
 
-|-----|--------------|
+|-----|
 |Customer ID|
 |Name|
 |Gender|
